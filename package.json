@@ -1,7 +1,7 @@
 {
   "name": "vnotes-types",
-  "version": "1.0.0",
-  "description": "types for the vnotes TFG application",
+  "version": "1.0.1",
+  "description": "types for the VNotes application",
   "main": "index.ts",
   "scripts": {
     "compile": "tsc"
