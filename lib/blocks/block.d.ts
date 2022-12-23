@@ -8,5 +8,6 @@ export default interface Block {
     content: string;
     uniqueProperties: BlockUniqueProperties;
 }
-export type BlockType = "text" | "heading_big" | "heading_medium" | "heading_small" | "checkbox";
+export declare const BLOCK_TYPES: readonly ["text", "heading_big", "heading_medium", "heading_small", "checkbox"];
+export type BlockType = typeof BLOCK_TYPES[number];
 export type BlockUniqueProperties = Partial<CheckboxUniqueProperties>;
