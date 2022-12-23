@@ -7,3 +7,5 @@ export { type default as CheckboxBlock } from "./checkbox";
 
 export { type BlockType } from "./block";
 export { type BlockUniqueProperties } from "./block";
+
+export { BLOCK_TYPES } from "./block";
