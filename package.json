@@ -4,7 +4,7 @@
   "description": "types for the vnotes TFG application",
   "main": "index.ts",
   "scripts": {
-    "compile": "npx tsc"
+    "compile": "tsc"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   "author": "Daniel Adrian Mare",
   "license": "ISC",
   "dependencies": {
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
     "typescript": "^4.9.4"
   }
 }
