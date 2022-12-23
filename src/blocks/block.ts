@@ -1,4 +1,4 @@
-  import type { CheckboxUniqueProperties } from "./checkbox";
+import type { CheckboxUniqueProperties } from "./checkbox";
 export default interface Block {
   blockID: string;
   parentID: string;
@@ -8,12 +8,13 @@ export default interface Block {
   content: string; //Content of the block
   uniqueProperties: BlockUniqueProperties;
 }
-
-export type BlockType =
-  | "text"
-  | "heading_big"
-  | "heading_medium"
-  | "heading_small"
-  | "checkbox";
+export const BLOCK_TYPES = <const>[
+  "text",
+  "heading_big",
+  "heading_medium",
+  "heading_small",
+  "checkbox",
+];
+export type BlockType = typeof BLOCK_TYPES[number];
 
 export type BlockUniqueProperties = Partial<CheckboxUniqueProperties>;
