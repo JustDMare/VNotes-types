@@ -1,0 +1,22 @@
+{
+  "name": "vnotes-types",
+  "version": "1.0.0",
+  "description": "types for the vnotes TFG application",
+  "main": "index.ts",
+  "scripts": {
+    "compile": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "VNotes-types"
+  },
+  "keywords": [
+    "typescript",
+    "types"
+  ],
+  "author": "Daniel Adrian Mare",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}
