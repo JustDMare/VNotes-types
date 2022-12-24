@@ -1,6 +1,6 @@
 import type { Block } from "./blocks";
 
-export default interface Note {
+export interface NoteSchema {
   noteID: string;
   parentID: string | null;
   title: string;
@@ -8,3 +8,5 @@ export default interface Note {
   lastUpdatedTime: string; // timestamp
   content: Block[];
 }
+
+export interface Note extends NoteSchema {}

@@ -1,8 +1,7 @@
 export * from "./blocks";
-export {default as Note} from "./note";
-export { type default as Folder } from "./folder";
-export { type NavigationNoteReference as NavigationNoteReference } from "./note-reference";
-export { type NavigationFolderReference as NavigationFolderReference } from "./folder";
-export { type default as UserSpace } from "./user-space";
-
-export { type AllPropertyTypesFromInterface } from "./utlity-types";
+export * from "./note";
+export * from "./folder";
+export * from "./note-reference";
+export * from "./folder";
+export * from "./user-space";
+export * from "./utlity-types";

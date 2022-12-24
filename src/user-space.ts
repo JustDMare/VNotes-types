@@ -1,8 +1,11 @@
 import type { NavigationFolderReference } from "./folder";
 import type { NavigationNoteReference } from "./note-reference";
 
-export default interface UserSpace {
+export interface UserSpaceSchema {
   userSpaceID: string;
+}
+
+export interface UserSpace extends UserSpaceSchema {
   content: {
     folders: NavigationFolderReference[];
     notes: NavigationNoteReference[];
