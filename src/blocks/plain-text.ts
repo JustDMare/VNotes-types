@@ -1,5 +1,5 @@
-import type Block from "./block";
+import { type Block } from "./block";
 
 export default interface PlainTextBlock extends Block {
-  type: "text";
+	type: "text";
 }
