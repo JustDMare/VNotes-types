@@ -1,7 +1,7 @@
 import type { Block } from "./blocks";
 
 export interface NoteSchema {
-  noteID: string;
+  _id: string;
   parentID: string | null;
   title: string;
   createdTime: string; // timestamp

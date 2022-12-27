@@ -1,7 +1,7 @@
 import type { NavigationNoteReference } from "./note-reference";
 
 export interface FolderSchema {
-  folderID: string;
+  _id: string;
   parentID: string | null;
   name: string;
   createdTime: string;

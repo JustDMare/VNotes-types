@@ -1,7 +1,7 @@
 import type { CheckboxUniqueProperties } from "./checkbox";
 
 export interface BlockSchema {
-  blockID: string;
+  _id: string;
   parentID: string;
   type: BlockType;
   createdTime: string; //timestamp
