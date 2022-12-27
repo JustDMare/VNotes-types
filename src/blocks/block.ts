@@ -4,8 +4,6 @@ export interface BlockSchema {
   _id: string;
   parentID: string;
   type: BlockType;
-  createdTime: string; //timestamp
-  lastUpdatedTime: string; //timestamp
   content: string; //Content of the block
   uniqueProperties: BlockUniqueProperties;
 }
