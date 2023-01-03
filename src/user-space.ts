@@ -2,12 +2,13 @@ import type { NavigationFolderReference } from "./folder";
 import type { NavigationNoteReference } from "./note-reference";
 
 export interface UserSpaceSchema {
-  userSpaceID: string;
+	_id: Object;
+	userToken: string;
 }
 
 export interface UserSpace extends UserSpaceSchema {
-  content: {
-    folders: NavigationFolderReference[];
-    notes: NavigationNoteReference[];
-  };
+	content: {
+		folders: NavigationFolderReference[];
+		notes: NavigationNoteReference[];
+	};
 }

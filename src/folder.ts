@@ -2,14 +2,14 @@ import type { NavigationNoteReference } from "./note-reference";
 
 export interface FolderSchema {
   _id: string;
-  parentID: Object | null;
+  parentId: Object | null;
   name: string;
   createdTime: string;
   lastUpdatedTime: string;
 }
 
 export interface Folder extends FolderSchema {
-  parentID: string;
+  parentId: string;
   content: {
     folders: NavigationFolderReference[];
     notes: NavigationNoteReference[];
