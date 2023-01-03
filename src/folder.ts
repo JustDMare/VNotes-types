@@ -2,14 +2,15 @@ import type { NavigationNoteReference } from "./note-reference";
 
 export interface FolderSchema {
   _id: string;
-  parentId: Object | null;
+  parentId?: Object;
+  userSpaceId: Object;
   name: string;
   createdTime: string;
   lastUpdatedTime: string;
 }
 
-export interface Folder extends FolderSchema {
-  parentId: string;
+export interface Folder extends Omit<FolderSchema, "userSpaceId"> {
+  parentId?: string;
   content: {
     folders: NavigationFolderReference[];
     notes: NavigationNoteReference[];
