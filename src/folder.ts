@@ -12,13 +12,8 @@ export interface FolderSchema {
 export interface Folder extends Omit<FolderSchema, "userSpaceId"> {
   parentId?: string;
   content: {
-    folders: NavigationFolderReference[];
+    folders: Folder[];
     notes: NavigationNoteReference[];
   };
   numberOfItems: number;
 }
-
-export type NavigationFolderReference = Omit<
-  Folder,
-  "createdTime" | "lastUpdatedTime"
->;

@@ -1,4 +1,4 @@
-import type { NavigationFolderReference } from "./folder";
+import type { Folder } from "./folder";
 import type { NavigationNoteReference } from "./note-reference";
 
 export interface UserSpaceSchema {
@@ -8,7 +8,7 @@ export interface UserSpaceSchema {
 
 export interface UserSpace extends UserSpaceSchema {
 	content: {
-		folders: NavigationFolderReference[];
+		folders: Folder[];
 		notes: NavigationNoteReference[];
 	};
 }
