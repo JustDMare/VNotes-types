@@ -1,7 +1,7 @@
 import type { Folder } from "./folder";
 import type { NavigationNoteReference } from "./note-reference";
 export interface UserSpaceSchema {
-    _id: Object;
+    _id: string;
     userToken: string;
 }
 export interface UserSpace extends UserSpaceSchema {
