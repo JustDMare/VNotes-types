@@ -5,6 +5,6 @@ export interface CheckboxBlock extends Block {
   uniqueProperties: BlockUniqueProperties & CheckboxUniqueProperties;
 }
 
-export default interface CheckboxUniqueProperties {
+export interface CheckboxUniqueProperties {
   selected: boolean;
 }
