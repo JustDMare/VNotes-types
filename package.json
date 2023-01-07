@@ -1,6 +1,6 @@
 {
   "name": "vnotes-types",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "types for the VNotes application",
   "main": "./src/index.ts",
   "scripts": {
