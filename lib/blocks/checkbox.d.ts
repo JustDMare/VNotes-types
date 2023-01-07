@@ -1,5 +1,5 @@
-import type { default as Block, BlockUniqueProperties } from "./block";
-export default interface CheckboxBlock extends Block {
+import type { Block, BlockUniqueProperties } from "./block";
+export interface CheckboxBlock extends Block {
     type: "checkbox";
     uniqueProperties: BlockUniqueProperties & CheckboxUniqueProperties;
 }

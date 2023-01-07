@@ -1,4 +1,4 @@
-import type Block from "./block";
-export default interface HeadingMediumBlock extends Block {
+import { type Block } from "./block";
+export interface HeadingMediumBlock extends Block {
     type: "heading_medium";
 }

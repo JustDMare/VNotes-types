@@ -1,9 +1,6 @@
-export { type default as Block } from "./block";
-export { type default as PlainTextBlock } from "./plain-text";
-export { type default as HeadingBigBlock } from "./heading-big";
-export { type default as HeadingMediumBlock } from "./heading-medium";
-export { type default as HeadingSmallBlock } from "./heading-small";
-export { type default as CheckboxBlock } from "./checkbox";
-export { type BlockType } from "./block";
-export { type BlockUniqueProperties } from "./block";
-export { BLOCK_TYPES } from "./block";
+export * from "./block";
+export * from "./plain-text";
+export * from "./heading-big";
+export * from "./heading-medium";
+export * from "./heading-small";
+export * from "./checkbox";
